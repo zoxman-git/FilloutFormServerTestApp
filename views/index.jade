@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  p Please try out our endpoints, more coming soon!
+  
+  p /api/form/{formId}/filteredResponses
+  p <a href='http://localhost:3000/api/form/cLZojxk94ous/filteredResponses' target="_blank">BASIC (no parameters) - /api/form/cLZojxk94ous/filteredResponses</a>
+  p <a href='http://localhost:3000/api/form/cLZojxk94ous/filteredResponses?filters=%5B%7B%22id%22%3A%224KC356y4M6W8jHPKx9QfEy%22%2C%22condition%22%3A%22does_not_equal%22%2C%22value%22%3A%22Thank%20you!%22%7D%2C%7B%22id%22%3A%22dSRAe3hygqVwTpPK69p5td%22%2C%22condition%22%3A%22greater_than%22%2C%22value%22%3A%222024-001-01%22%7D%5D&limit=2&afterDate=2024-01-01T00:00:00.000Z&beforeDate=2025-01-01T23:59:59.999Z&status=finished&includeEditLink=true&sort=desc&offset=2' target="_blank">ALL (all parameters) - /api/form/cLZojxk94ous/filteredResponses</a>
+
